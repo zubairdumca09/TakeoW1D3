@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-model {
+            position: absolute;
+            width: 500px;
+            height: 450px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+        }
+
+        div::after {
+            content: "I am after content";
+        }
+
+        div::before {
+            content: "I am before content";
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Block Elements -->
+    <div class="box-model">
+        <img src="images/Boxmodell-detail.png" />
+    </div>
+</body>
+
+</html>
